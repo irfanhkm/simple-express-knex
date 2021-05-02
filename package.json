@@ -1,32 +1,45 @@
 {
-  "name": "adonis-api-app",
-  "version": "4.1.0",
-  "adonis-version": "4.1.0",
-  "description": "Adonisjs boilerplate for API server with pre-configured JWT",
+  "name": "dompetku-api",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "node ace test"
+    "start": "nodemon index.js --exec babel-node",
+    "lint": "DEBUG=eslint:cli-engine eslint --fix --ext .js,.jsx .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "adonisjs",
-    "adonis-app"
-  ],
-  "author": "",
-  "license": "UNLICENSED",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanhkm/dompetku-api.git"
+  },
+  "author": "irfan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irfanhkm/dompetku-api/issues"
+  },
+  "homepage": "https://github.com/irfanhkm/dompetku-api#readme",
   "dependencies": {
-    "@adonisjs/ace": "^5.0.8",
-    "@adonisjs/auth": "^3.0.7",
-    "@adonisjs/bodyparser": "~2.0.9",
-    "@adonisjs/cors": "^1.0.7",
-    "@adonisjs/fold": "^4.0.9",
-    "@adonisjs/framework": "^5.0.9",
-    "@adonisjs/ignitor": "^2.0.8",
-    "@adonisjs/lucid": "^6.1.3"
+    "babel-eslint": "^10.1.0",
+    "babel-node": "0.0.1-security",
+    "babel-plugin-istanbul": "^6.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.10.1",
+    "knex": "^0.95.4",
+    "lodash": "^4.17.21",
+    "mysql": "^2.18.1",
+    "objection": "^2.2.15"
   },
-  "devDependencies": {},
-  "autoload": {
-    "App": "./app"
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
   }
 }
